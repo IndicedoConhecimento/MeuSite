@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia de Hoje</title>
+    <style>
+        div {
+            background-color: rgb(241, 23, 23);
+            text-decoration-color: blue;
+            color: blue;
+        }
+        
+        body {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text1">
+
+    </div>
+    <script>
+        for (var tempo = 1; tempo <= 6; c--) {
+            var texto = document.getElementById("text1")
+            var data = new Date()
+            var hora = data.getHours()
+            var minuto = data.getMinutes()
+            var segundo = data.getSeconds()
+            var mili = data.getMilliseconds()
+            texto.innerHTML = `A hora de hoje é ${hora}:${minuto}:${segundo}:${mili}`
+        }
+    </script>
+</body>
+
+</html>
